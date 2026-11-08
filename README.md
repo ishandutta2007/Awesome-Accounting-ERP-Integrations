@@ -32,77 +32,30 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
 - [Open-Source GitHub Projects](#open-source-github-projects)
-
 - [How to Contribute](#how-to-contribute)
-
 - [Disclaimer](#disclaimer)
 
+## Sector Overview & Market Dynamics
 
+The global core ERP market is valued at approximately **$64B to $85B+**, with the dedicated ERP system integration, middleware, and consulting ecosystem contributing an additional **$15B+** in market activity driven by multi-cloud adoption and legacy modernization. While the underlying core ERP and accounting tier is **heavily concentrated** among an oligopoly of incumbents (SAP, Oracle/NetSuite, Intuit, Workday), the integration middleware and iPaaS layer is **moderately fragmented**, leaving specialized connectors and boutique integration workflows open to nimble SaaS and open-source tooling.
 
 ## SaaS/Hosted Platforms
 
-
-
-- **Chargebee**
-
-  **Subscription billing with native accounting integrations**. Syncs invoices, credit notes, payments, and revenue recognition entries directly to **Xero, QuickBooks Online, NetSuite, and Sage Intacct** . **Pricing**: **Performance $7,188/year** (billed monthly, up to $100K billing/month); **Enterprise** quote-only; **RevenueStory** for advanced rev-rec is a paid add-on . **Free tier**: CPQ Lite free for first 50 quotes (billing customers only). **Best for**: subscription businesses wanting billing and GL sync in one platform—**trade-off**: accounting integration is a feature of Chargebee, not a standalone connector.
-
-
-
-- **Celigo NetSuite Connector**
-
-  **Pre-built NetSuite integration** with Shopify, Salesforce, and other commerce systems. **Pricing**: **Starting Package $7,800/year** (2 app endpoints, 10 integration flows, unlimited users); **Standard Edition $18,900/year** (3 endpoints, 20 flows, 24/7 support) . **Free tier**: 30-day free trial. **Best for**: NetSuite-centric retailers and finance teams wanting pre-built order-to-cash flows—**trade-off**: pricing scales with endpoint and flow count.
-
-
-
-- **QuickBooks Online Sync (Third-Party)**
-
-  **Sync tools connecting external systems to QBO**. **Pricing**: Varies by connector—**SimpleCommerceSync** syncs HubSpot Commerce Hub invoices and payments with a **free tier (5 items/month)** ; **BigTime** offers deep project-to-QBO sync with bidirectional data flow . **Free tier**: Varies. **Best for**: SMBs wanting to connect commerce or project systems to QBO—**trade-off**: quality and depth vary widely by connector.
-
-
-
-- **Xero Sync (Shopify)**
-
-  **Native Shopify-to-Xero integration**. **Pricing**: **Early $25/month** (20 invoices, bank reconciliation, W-9/1099); **Growing $55/month**; **Established $90/month** (multi-currency, project tracking) . **Free tier**: 30-day free trial. **Best for**: Shopify merchants wanting daily sales summaries or per-order sync to Xero—**trade-off**: Xero subscription billed separately.
-
-
-
-- **NetSuite SuiteSync (Acterys)**
-
-  **NetSuite data extraction and reporting** without ODBC. **Pricing**: **From $10,000/year flat rate** (no per-row charges); **Report** and **Plan** tiers add Power BI dashboards and FP&A, quoted on scope . **Free tier**: 14-day free trial. **Best for**: NetSuite customers wanting predictable pricing for data sync and reporting—**trade-off**: entry point is $10K; not a general-purpose connector.
-
-
-
-- **Sage Intacct Integration**
-
-  **Partner program for API access**. **Pricing**: **$2,500 annual partnership fee** (includes 1 SenderID); **$1,000 per additional SenderID**; **$0.015 per API call** with **$1,000 monthly credit** (~66K free calls) . **Free tier**: None (partnership fee required). **Best for**: SaaS companies building Intacct integrations—**trade-off**: customers may need their own developer license if you don't join the program.
-
-
-
-- **Workday Financials Integration**
-
-  **Enterprise financial management** with integration toolkits. **Pricing**: **FTE-band based**—3,000 FTE Core ~$300K/year; 10,000 FTE full stack ~$900K–$1.25M; 20,000 FTE with Adaptive ~$1.5M–$2.4M . **Free tier**: None. **Best for**: large enterprises with existing Workday HCM—**trade-off**: integration toolkits and premium connectors are separately licensed; 4–7% annual escalator.
-
-
-
-- **SAP S/4HANA Connector**
-
-  **Integration via OData, CDS views, or third-party tools**. **Pricing**: Power BI licensing + SAP side; third-party connectors (APOS, Theobald) add subscription fees . **Free tier**: Varies. **Best for**: SAP-centric enterprises connecting to analytics or external systems—**trade-off**: licensing complexity; BASIS/infrastructure costs for OData setup.
-
-
-
-- **FreshBooks Sync**
-
-  **Small business accounting** with integrations. **Pricing**: **Lite $13.50/month** (5 billable clients, unlimited invoices); Plus/Premium tiers scale . **Free tier**: None. **Best for**: freelancers and service businesses wanting simple accounting with integrations—**trade-off**: 5-client limit on Lite.
-
-
-
-- **Tipalti AP Sync (Sage Intacct)**
-
-  **Accounts payable automation** with 2-way Sage Intacct sync. **Pricing**: **Starting at $99/month** (unlimited users, supplier portal, core automation); transaction pricing per invoice/payment; additional modules (Procurement, Expenses, Treasury) available . **Free tier**: None. **Best for**: finance teams wanting AP automation with GL sync—**trade-off**: transaction fees stack on subscription.
+| Platform / Product | Company Size (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier Limits | Key Highlights & Trade-offs |
+| :--- | :--- | :--- | :--- | :--- |
+| **SAP S/4HANA Connector** | ~$255B–$270B Market Cap (~€33B+ Annual Rev) | $180/user/month (Base Edition, min 15 users ~$2,700/mo) | 30-day free trial (shared tenant, pre-loaded demo data; 14-day trial for Public Sector) | Enterprise ERP integration via OData/CDS views or middleware (APOS/Theobald). Requires significant BASIS/infrastructure setup. |
+| **QuickBooks Online Sync (SimpleCommerceSync)** | ~$92B–$95B Intuit Market Cap (~$16B+ Rev) / Image in a Box: Boutique Dev | $30/month (Pro plan; SimpleCommerceSync for HubSpot-to-QBO) | Free forever plan: limited to 5 invoices, 5 quotes, 5 payments, and 5 products/month (1 user) | SMB connector linking external commerce & CRMs to QBO. Depth and quality vary by connector. |
+| **Workday Financials Integration** | ~$47B–$50B Market Cap (~$8.4B+ Annual Rev) | ~$25,000/month (~$300,000/year for Core 3,000 FTE band) | 30-day free trial limited to Workday Adaptive Planning; Core Financials offers guided live demo only | Top-tier enterprise financials and HCM sync. High total cost of ownership; integration toolkits separately licensed. |
+| **Sage Intacct Integration** | ~$11B–$11.7B Sage Group Market Cap (~£2.3B+ Rev) | $208.33/month ($2,500/year annual partner fee + $0.015/API call after credit) | 30-day free trial (access to sandbox environment with sample multi-entity demo data; $1,000/mo API credit on partner program) | Cloud financial management with rich multi-entity consolidation. Developers need partnership/SenderID licenses. |
+| **Tipalti AP Sync** | $8.3B Valuation (~$200M+ ARR) | $99/month (Standard AP platform subscription + transaction fees per payment/invoice) | 14-day guided sandbox access upon sales qualification (no self-serve free tier; live demo available) | Comprehensive AP automation with 2-way GL synchronization for Sage Intacct & NetSuite. Transaction costs scale with volume. |
+| **Xero Sync (Shopify Integration)** | ~$7B–$7.5B Market Cap (~$1.7B+ NZD Rev) | $25/month (Early tier; up to 20 invoices and bank reconciliation) | 30-day free trial (full access to core invoicing & bank reconciliation, no credit card required) | Native commerce-to-cloud-accounting synchronization. Established features like multi-currency require the $90/month plan. |
+| **Chargebee** | $3.5B Valuation (~$200M–$300M ARR) | $599/month (Performance tier billed annually at $7,188/year for up to $100K/mo billing) | Free forever Starter plan up to $250,000 cumulative lifetime billing (capped at 150 API requests/min; 0.75% overage fee thereafter) | Subscription billing engine with native automated GL sync to NetSuite, QuickBooks, Sage Intacct, and Xero. |
+| **FreshBooks Sync** | $1.0B Valuation (~$80M+ ARR) | $13.50/month (Lite tier; billed monthly, includes 5 billable clients) | 30-day free trial (full feature access for invoicing and expense tracking, no credit card required) | Clean invoicing and small business accounting with simple connectors. Strict 5-client limit on starting tier. |
+| **Celigo NetSuite Connector** | ~$100M ARR (~$85M Funding Raised) | $650/month ($7,800/year Starting Package; includes 2 app endpoints and 10 flows) | Free forever plan: 2 endpoints and 1 enabled active integration flow (preceded by a 30-day unrestricted free trial) | Pre-built iPaaS connectors for NetSuite order-to-cash, Shopify, and CRM systems. Flow additions incur stepped costs. |
+| **NetSuite SuiteSync (Acterys)** | ~$3M ARR (Acquired by Vena Solutions) | $833.33/month ($10,000/year flat rate base sync connector) | 14-day free trial (access to planning engine, Power BI visuals, and up to 2GB cloud sandbox storage) | Direct NetSuite data extraction, Power BI modelling, and FP&A synchronization without requiring ODBC drivers. |
 
 
 
